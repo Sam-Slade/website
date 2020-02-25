@@ -1,0 +1,21 @@
+Using Bash and cron jobs to be lazy (in a good way) at University
+
+I recently started University after taking a year out and nothing quite prepares you for the shock of how much work you get. It is totally different from college, no hand holding, it’s your responsibility to organize yourself. This has lead me down the path of trying to figure out the best way to organize myself. There are more methods to do so than you can shake a stick at but I struggle to make them stick. This is possibly due to my interest in maths and computing, both famous for their stereotypical laziness. However, could laziness be the key to efficient productivity.
+
+    “I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it” 
+
+— Bill Gates
+
+So what can lazy do for you? It can be an incredible driving force to expend as little effort as possible on repeated tasks. What I mean by this is if there is a task that you do frequently why not spend a little effort now to reduce the repeated effort you put in each time that repeated task arises. At University, I found that at the start of each lecture I would create a directory for that session. This isn’t a difficult task, nor is it very time consuming. However, it is rather annoying to have to do it at the start of each lecture. So, driven by my laziness I sought a solution. What I came up with made use of some a simple bash script and a cron job that would trigger the bash script 5 minutes before the lecture began. This is the contents of the bash script:
+
+#!/bin/bash                                                      
+foldername='S1L'
+cd path/to/lecture/directory/
+i=`ls -v | tail -c 2`
+i=$((i+1))
+mkdir $foldername$i
+ls
+
+The script grabs the last character of the last folder in the directory and creates a new folder that incrementes the last digit by one. I admit this may not be the best method, but it works! It does assume that all the folders in the directory all follow the same pattern of being call “S1LX” where X is the lecture number. So in the future some improvements could be made.
+
+As I detailed in my post titled 800 Mega Hertz is enough, I have a slightly older laptop which is getting to be on its last legs. We have all heard horror stories of how students or colleagues have lost hours and hours of work when a USB drive or laptop suddenly gives up the ghost. I don’t want to the unfortunate protagonist of another of those stories. So, to prevent the extreme effort of having to redo loads of work should my laptop fail I have setup another cron job that happens each night that commits my university file tree to a private git repo. Again, this is another thing I sunk a little time into that has saved me lots of time in the future, I don’t have to remember to manually back it up, saving me time in the long run. If you have time saving scripts or methods you use why not comment them below.

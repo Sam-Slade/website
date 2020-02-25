@@ -1,0 +1,13 @@
+<html>
+        <head>
+                <title>404 Error</title>
+                <link rel="stylesheet" href="gruvbox.css">
+        </head>
+        <main>
+                <h1>Error 404! This page couldn't be found</h1><br/>
+                <p>If you think the page there should is a page here that is missing, please contact me via email!</p><br/><br/>
+                <a href="/">TAKE ME HOME</a>
+        </main>
+</html>
+
+

@@ -1,0 +1,56 @@
+ _    _ _             _   _ _             _       _   _                                   
+| |  | | |           | | | (_)           (_)     | | | |                                  
+| |  | | |__  _   _  | | | |_ _ __ ___    _ ___  | |_| |__   ___                          
+| |/\| | '_ \| | | | | | | | | '_ ` _ \  | / __| | __| '_ \ / _ \                         
+\  /\  / | | | |_| | \ \_/ / | | | | | | | \__ \ | |_| | | |  __/                         
+ \/  \/|_| |_|\__, |  \___/|_|_| |_| |_| |_|___/  \__|_| |_|\___|                         
+               __/ |                                                                      
+              |___/                                                                       
+ _               _         _             _     _                                          
+| |             | |       | |           | |   | |                                         
+| |__   ___  ___| |_   ___| |_ __ _ _ __| |_  | |_ ___                                    
+| '_ \ / _ \/ __| __| / __| __/ _` | '__| __| | __/ _ \                                   
+| |_) |  __/\__ \ |_  \__ \ || (_| | |  | |_  | || (_) |                                  
+|_.__/ \___||___/\__| |___/\__\__,_|_|   \__|  \__\___/                                   
+                                                                                          
+                                                                                          
+ _                       _               _____                 ___     _                  
+| |                     (_)             |  __ \               / / |   (_)                 
+| | ___  __ _ _ __ _ __  _ _ __   __ _  | |  \/_ __  _   _   / /| |    _ _ __  _   ___  __
+| |/ _ \/ _` | '__| '_ \| | '_ \ / _` | | | __| '_ \| | | | / / | |   | | '_ \| | | \ \/ /
+| |  __/ (_| | |  | | | | | | | | (_| | | |_\ \ | | | |_| |/ /  | |___| | | | | |_| |>  < 
+|_|\___|\__,_|_|  |_| |_|_|_| |_|\__, |  \____/_| |_|\__,_/_/   \_____/_|_| |_|\__,_/_/\_\
+                                  __/ |                                                   
+                                 |___/                                                    
+
+                                                                                          
+Vim to a lot of people is an integral part of their work flow. Its versitiliy and plethora of tools mean it is suited to nearly any task you could think to throw at it. Not to mention it is so light weight that I wouldn't be surprised if you can install and run it on a calculator.
+
+I had just started college when I properly encountered Linux. This elegant OS that seemed to have everything that I could ever want or need wrapped up in a shell environment. I dived straight in without any consideration, completely overwriting every file I had on my system to make room for this shiny new operating system, Arch. I had heard tales of its difficulty but I soldiered valiantly forth, into the unknown. However, not too valiently, I of course was following the directions of the sacred texts know as the archwiki. All was going well until I encountered my first big hurdle, and then I uttered the phrase that countless before me had said:
+"How do I quit vim?"
+
+Diving in with Arch probably wasn't my best Idea, and I fully admit that I am the type of person who follow the mantra "30 minutes of trial and error saves 2 minutes of man pages." but it did introduce me to one of the most powerful of tools in the Linux toolbox: Vim. I personally feel Vim encapsulates most, if not all, of Linux's core values. Each of which I will cover in this post.
+
+##It's yours to configure##
+
+Linux at it's core is built to be configured for whatever task you have in mind, be that for hosting a web page or for use as your daily driver. And a lot of that flexability to do everything comes from the incredibly easy access to config files. There are whole communities dedicated to exploring how different combinations of configurations can change a systems asthetics and functions to the point that they become unrecognisable from their original base system. Vim follows this same ethos. With Vim it takes the form of the vimrc file, this file allows for some incredible additions to an already feature rich editor.
+
+The vimrc files are unique to each person and often unique to each system a person uses. A person will sculpt their vimrc file into something that reflects their work flow, aiding them to write faster or work free from distraction. I find it incredible, and also daunting, to sit down at someone else's Vim session and realise that I have no idea what any one key could do, one misinput and I could be either wiping their working directory or be calling in an air strike on next door.
+
+Vim's config file is a gateway into the kind of customisation a new user can expect to find when they delve deep into their dot files that hide away behind the “-a” flag of a file search. To its credit, the vimrc file is incredibly nice to learn as a new user. The vast majority of commands are immediately human readable and the remainder follow a simple scheme of usually being the first letter of the command it is associated with. Each of these configurations can also be tested and played with in the editor so the user can hone their syntactic skills live and watch the results unfold before them. Within a single hour, armed with only Vimtutor and the man pages, a new user can construct a configuration file that makes them feel like some sort of terminal wizard akin to the hackers in Shadowrun.
+
+You can spend thousands of hours using Vim, mastering its navigation, learning every command and key combination and even then there is always something new that can take you by surprise. These surprise are what keep me search for new things to add and refine my vimrc with.
+
+##Familiarity in an alien place##
+
+If you were to open a new program that you had never used before and then had to learn its own proprietary editor in order to configure anything about the prgram would be a nightmare. It's enough to make you wake up in a cold sweat at night, terrified of all the millions of key combinations for each different program that you need to remember. So having Vim there to edit every configuration you need adds some much needed continuity. Allowing a new user to focus more on learning the program than its editor.
+
+##Building a mentality##
+
+Vim is hard to learn. I wanted this to be my final point as it is a nice one to end on. Vim builds a mentality in new users that I don't think you would get otherwise. At its core vim is very raw, it doesn't shy away from letting you lose with commands that could be scary. It also doesn't tell you that they're there either, which quickly teaches you button mashing isn't a good idea. It does however teach you a very valuable lesson that something that may appear very bland and good for only one thing is actually the perfect canvas for creating an indispensable tool.
+
+Vim is just a text editor. That is why it is so good at doing lot's of stuff, because it's such a clean and simple baseplate, it leaves so much room to play and invent new uses for it. The simplicity of Vim also means that you don't have to jump through a billion hoops to let other programs talk to vim. want to pipe fzf into vim so you can fuzzy search and edit files quickly? Easy. Got a long command that is a pain to edit just on the main terminal? Well, open it in Vim and then run it. The fact that it inter-links with so much, means that the first bits of knowledge that a new user learns are useable in most situations. This approach of learning to squeeze so much from something that, at first glace appears so devoid of features that the developer didn't even include a method to quit, creates a new user who is willing to experiment and create. The mentality it creates is that of someone who when faced with a problem will work to find a solution that is simple and usable in other cases, not just a quick fix but a toolto be used elsewhere. That mentailty is great for the community as a whole and often stems from a users first interactions with a system and in most cases, it's fortunetly Vim.
+
+Thank you
+
+Hey, thanks for reading, this is my first blog post on this site and any feedback is welcome. This was more of an open letter to the Vim and Linux community about why I think it's great for new users. I am also only human, so my apologise for any spelling errors. Also, Emacs is great too. 
